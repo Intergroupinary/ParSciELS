@@ -1,0 +1,2 @@
+ParSciELS::Application.config.secret_key_base = 'e2e8c2736bc6ad4965e721ce98d7c1b3435a7d7d9d82bcc9efadbb675d83f800f366dff10a776bdbdf697ce74efb1210df7ace1c81f0f395caa2469e812c7bb7
+'
