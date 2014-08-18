@@ -26,7 +26,11 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    autoprefixer-rails (2.2.0.20140804)
+      execjs
     bcrypt (3.1.7)
+    bootstrap-sass (3.2.0.1)
+      sass (~> 3.2)
     builder (3.1.4)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -110,7 +114,10 @@ GEM
       json (>= 1.1.3)
       rdoc (~> 3.10)
     sexp_processor (4.4.4)
-    sprockets (2.12.1)
+    simple_form (3.0.2)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
+    sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
@@ -139,7 +146,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   bcrypt
+  bootstrap-sass (~> 3.2.0)
   coffee-rails (= 4.0.1)
   devise
   haml-rails
@@ -154,6 +163,8 @@ DEPENDENCIES
   ruby_parser
   sass-rails (= 4.0.1)
   sdoc (= 0.3.20)
+  simple_form
+  sprockets (= 2.11.0)
   sqlite3 (= 1.3.8)
   turbolinks (= 1.1.1)
   uglifier (= 2.1.1)

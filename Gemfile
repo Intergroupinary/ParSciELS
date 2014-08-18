@@ -21,6 +21,10 @@ gem 'html2haml'
 gem 'haml-rails'
 gem 'hpricot'
 gem 'ruby_parser'
+gem 'simple_form'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'sprockets', '2.11.0'
+gem 'autoprefixer-rails'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
