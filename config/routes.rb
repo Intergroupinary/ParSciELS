@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "static_pages/home"
+  get "static_pages/help"
   devise_for :users
   get "sessions/new"
   get "log_out" => "sessions#destroy", :as => "log_out"

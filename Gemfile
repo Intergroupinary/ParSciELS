@@ -17,6 +17,10 @@ gem 'jbuilder', '1.0.2'
 gem 'bcrypt'
 gem 'devise'
 gem 'protected_attributes'
+gem 'html2haml'
+gem 'haml-rails'
+gem 'hpricot'
+gem 'ruby_parser'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
