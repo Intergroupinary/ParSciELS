@@ -9,22 +9,23 @@
     /[if lt IE 9]
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   %body
-    %header.navbar.navbar-fixed-top.navbar-inverse
-      .navbar-inner
-        .container
-          = link_to "sample app", '#', id: "logo"
-          %nav
-            %ul.nav.pull-right.navbar-nav
-              %li= link_to "Home",    '#'
-              %li= link_to "Help",    '#'
-              %li= link_to "Sign in", '#'
-              -# if current_user
-                %li
-                  Logged in as #{current_user.email}. \#{link_to "Log out", log_out_path}
-              -# else
-                %li
-                  \#{link_to "Sign up", sign_up_path} or \#{link_to "log in", log_in_path}
-
+    - if current_user    
+      %header.navbar.navbar-fixed-top.navbar-inverse
+        .navbar-inner
+          .container
+            = link_to "sample app", '#', id: "logo"
+            :javascript
+              window.onload = date_time('date_time');
+            %nav
+              %ul.nav.pull-right.navbar-nav
+                %li= link_to "Home",    '#'
+                %li= link_to "Help",    '#'            
+                - if current_user
+                  %li= link_to current_user.email, '#'
+                  %li= link_to "Log out", log_out_path
+                - else
+                  %li= link_to "Sign up", sign_up_path
+                  %li= link_to "Log in", log_in_path
 
     .container
 
