@@ -9,6 +9,18 @@ html {
 
 body {
   padding-top: 160px;
+  background: url('/assets/colored-pencils-with-blurred-foreground_medium.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-filter: blur(100px);
+    -moz-filter: blur(100px);
+    -o-filter: blur(100px);
+    -ms-filter: blur(100px);
+    filter: blur(100px);
+  	background-color:#FFF;
+  	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
 }
 
 section {

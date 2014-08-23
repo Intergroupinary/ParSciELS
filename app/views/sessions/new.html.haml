@@ -1,12 +1,15 @@
-.col-md-offset-4.col-md-4
-  .panel.panel-default
+.col-md-8
+  %h1{:style => "font-size:56px; color:#FFF; text-shadow: 1px 1px 2px #000;"} Parañaque Science High School
+  %h1{:style => "color:#5bc0de; text-shadow: 1px 1px 2px #000;"} Quiz Management System
+.col-md-4
+  .panel.panel-info
     .panel-heading
-      %h1 Log in
+      %h1 Login
     .panel-body
       = simple_form_for sessions_path do |f|
-        .form-inputs.col-md-12        
+        .form-group-xlg.col-md-12        
           .col-md-offset-1.col-md-6
-            = f.label :email
+            = f.label :username
           %br/
           .center
             .input-lg= f.input_field :email
@@ -17,6 +20,8 @@
           .center
             .input-lg= f.input_field :password
           %br/
-          .center
-            = f.button :submit, "Login", class: "btn btn-primary btn-lg"
-          
+          .col-md-offset-6.col-md-6
+            = f.button :submit, "Login", class: "btn btn-primary btn-lg btn-block"
+%footer.col-md-offset-4.col-md-4.center{:style => "padding-top:50px;"}
+  %p{:style => "color:#AAA; font-size:16px"}Developed by Arioja, Lara, Merin, and Zurita for the use of Parañaque Science High School
+  %p{:style => "color:#AAA;"}Developed using Ruby on Rails Framework          

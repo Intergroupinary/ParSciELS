@@ -6200,4 +6200,14 @@ button.close {
     display: none !important;
   }
 }
+.bodyBackground {
+	background: url('/assets/64531/green_suburb.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color:#fff;
+  	background-color:#333;
+  	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+}
 /*# sourceMappingURL=bootstrap.css.map */
